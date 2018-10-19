@@ -4,6 +4,10 @@ An instagram-like app that allow people to take/edit pictures, publish daily lif
 This project is made available by and on behalf of the University of Melbourne - comp90018, mobile computing (android) team.
 
 
+Have a look at our demo video:
+https://www.youtube.com/watch?v=JgQqXQYTVaE&feature=youtu.be
+
+
 Developers:
 
 freddieMe(me) @https://github.com/freddieMe
@@ -17,4 +21,6 @@ wandra60n @https://github.com/wandra60n
 
 Visit the oringinal repository:
 https://github.com/kuldeepsuhag/Instagram_COMP90018
+
+
 
