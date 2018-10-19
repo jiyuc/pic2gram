@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".share.WifiDirectActivity">
+
+    <RelativeLayout
+        android:id="@+id/RelLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="370dp">
+
+        <TextView
+            android:id="@+id/TextStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="connection status"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/ButtonToggleWifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextStatus"
+            android:layout_marginLeft="20dp"
+            android:text="ON / OFF" />
+
+        <Button
+            android:id="@+id/ButtonDiscover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextStatus"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/ButtonToggleWifi"
+            android:text="DISCOVER" />
+
+        <!--ToggleButton
+            android:id="@+id/buttonToggleDiscovery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextStatus"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/ButtonDiscover"/-->
+
+        <ListView
+            android:id="@+id/listNode"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/ButtonDiscover"
+            android:layout_marginTop="10dp"></ListView>
+
+        <!--<EditText-->
+        <!--android:id="@+id/editChatText"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_below="@id/listNode"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:hint="your message here ..."-->
+        <!--/>-->
+
+
+        <ImageView
+            android:id="@+id/imageShare"
+            android:layout_width="178dp"
+            android:layout_height="147dp"
+            android:layout_below="@+id/listNode"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/ButtonEnter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="23dp"
+            android:text="Send" />
+
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

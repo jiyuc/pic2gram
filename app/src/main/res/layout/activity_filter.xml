@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".camera.FilterActivity">
+
+    <ImageView
+        android:id="@+id/picture_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/filter_panel"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter">
+
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/camera"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:id="@+id/crop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/back"
+        android:layout_marginRight="82dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:selectableItemBackground"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/crop" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:selectableItemBackground"
+        android:scaleType="fitCenter"
+        android:text="next" />
+
+    <HorizontalScrollView
+        android:id="@+id/filter_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/filter_bottom_navigation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/background_light"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/origin"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?android:selectableItemBackground"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/origin" />
+
+                <TextView
+
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/filter_image"
+                    android:layout_centerHorizontal="false"
+                    android:gravity="center"
+                    android:text="Origin"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textIsSelectable="false"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/neon"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?android:selectableItemBackground"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/bluemess" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/filter_image"
+                    android:layout_centerHorizontal="false"
+                    android:gravity="center"
+                    android:text="Blue Mess"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textIsSelectable="false"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/yellow"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?android:selectableItemBackground"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/old" />
+
+                <TextView
+
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/filter_image"
+                    android:layout_centerHorizontal="false"
+                    android:gravity="center"
+                    android:text="Old Times"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textIsSelectable="false"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/black"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?android:selectableItemBackground"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/black_n_white" />
+
+                <TextView
+
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/filter_image"
+                    android:layout_centerHorizontal="false"
+                    android:gravity="center"
+                    android:text="Black n White"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textIsSelectable="false"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/awe"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?android:selectableItemBackground"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/awe" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/filter_image"
+                    android:layout_centerHorizontal="false"
+                    android:gravity="center"
+                    android:text="Awe"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textIsSelectable="false"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/nigth_wh"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?android:selectableItemBackground"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/night_whis" />
+
+                <TextView
+
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/filter_image"
+                    android:layout_centerHorizontal="false"
+                    android:gravity="center"
+                    android:text="Night Whisper"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textIsSelectable="false"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/lime_stur"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?android:selectableItemBackground"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/lime_stur" />
+
+                <TextView
+
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/filter_image"
+                    android:layout_centerHorizontal="false"
+                    android:gravity="center"
+                    android:text="Lime Stutter"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textIsSelectable="false"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <ScrollView
+        android:id="@+id/edit_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/filter_bottom_navigation"
+        android:layout_below="@id/picture_view"
+        android:background="@android:color/background_light"
+        android:focusable="false"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contrast_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contrast" />
+
+            <SeekBar
+                android:id="@+id/contrast_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/brightness_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Brightness" />
+
+            <SeekBar
+                android:id="@+id/bright_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/filter_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/background_light">
+
+        <Button
+            android:id="@+id/filter_navi"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:text="Filter"
+            android:textSize="12sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/edit_navi"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:text="TUNE"
+            android:textSize="12sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

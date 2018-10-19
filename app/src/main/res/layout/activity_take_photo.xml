@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/filter_container"
+    tools:context=".camera.TakePhotoActivity">
+
+    <io.fotoapparat.view.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/capture_bottom">
+        <!--Optionally add tap to focus-->
+        <io.fotoapparat.view.FocusView
+            android:id="@+id/focusView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </io.fotoapparat.view.CameraView>
+
+    <com.example.kulde.instagram.camera.filters.GridLines
+        android:id="@+id/grid_lines"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/capture_bottom"
+        android:focusable="false">
+
+    </com.example.kulde.instagram.camera.filters.GridLines>
+
+    <ImageButton
+        android:id="@+id/back_main"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:selectableItemBackground"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/switch_camera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/back_main"
+        android:layout_centerHorizontal="true"
+        android:background="?android:selectableItemBackground"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/switch_camera" />
+
+
+
+    <ImageView
+        android:id="@id/result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/capture_bottom"
+        />
+
+    <RelativeLayout
+        android:id="@+id/capture_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:layout_alignParentLeft="true">
+
+        <ImageButton
+            android:id="@+id/capture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/shotbt" />
+
+        <ImageButton
+            android:id="@+id/flash"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="26dp"
+            android:layout_marginLeft="63dp"
+            android:layout_marginStart="63dp"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/flash_off" />
+
+        <ImageButton
+            android:id="@+id/gallary"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/capture"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="61dp"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/gallery"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="61dp">
+
+        </ImageButton>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

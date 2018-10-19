@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "1038833058229",
+    "firebase_url": "https://instagram-mobile-computing.firebaseio.com",
+    "project_id": "instagram-mobile-computing",
+    "storage_bucket": "instagram-mobile-computing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038833058229:android:9363eeba6e8bf40e",
+        "android_client_info": {
+          "package_name": "com.example.kulde.instagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1038833058229-qmh1n2oj20f39t4oualuej5ss5m6mhn2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kulde.instagram",
+            "certificate_hash": "0664075fa3667c144fac9c099704320380bded72"
+          }
+        },
+        {
+          "client_id": "1038833058229-dv3bbg79apu5hng72sdcs5rujklf06tm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kulde.instagram",
+            "certificate_hash": "7ad2e986b3afd74f33a13b1c2ab8352c9e5ee0a6"
+          }
+        },
+        {
+          "client_id": "1038833058229-v41hirc0uj0ph81jp3a80v3jhs8jjppm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kulde.instagram",
+            "certificate_hash": "df98585044ed60cf416b61233345e848fccce7cb"
+          }
+        },
+        {
+          "client_id": "1038833058229-3kok44kl91rf9amimgu6ihll6gc4m08u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kulde.instagram",
+            "certificate_hash": "15fac9acb539f2ff7246bcf248a36ae092750512"
+          }
+        },
+        {
+          "client_id": "1038833058229-gl2cqhii10eri5908c97epoeq9pg88kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD14HoJs32Izz6l2elVAx03YhzmSyfAdm0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1038833058229-gl2cqhii10eri5908c97epoeq9pg88kq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
